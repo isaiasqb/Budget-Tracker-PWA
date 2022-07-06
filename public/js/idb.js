@@ -13,7 +13,7 @@ request.onsuccess = function(event) {
 
   // check if online, if yes send all local db data to api
   if (navigator.onLine) {
-    // uploadTransaction();
+    uploadTransaction();
   }
 };
 
@@ -40,7 +40,7 @@ function uploadTransaction() {
   const transactionObjectStore = transaction.objectStore('new_transaction');
 
   // get all records from store and set to a variable
-  const getAllTransactions = transactionObjectStore.getAll();
+  const getAll = transactionObjectStore.getAll();
 
   // upon a successful .getAll() execution, run this function
   getAll.onsuccess = function() {
@@ -74,3 +74,6 @@ function uploadTransaction() {
     }
   };
 }
+
+// listen for app coming back online
+window.addEventListener('online', uploadTransaction);
