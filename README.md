@@ -16,3 +16,11 @@ A service worker has been added to the application.
 The app is deployed to Heroku and it uses MongoDB Atlas as a host for the Database.
 
 
+## Links
+
+The URL of the functional, deployed application.
+https://budget-app-isaiasqb.herokuapp.com/
+
+
+The URL of the GitHub repository, with a unique name and a README describing the project.
+https://github.com/isaiasqb/Budget-Tracker-PWA
